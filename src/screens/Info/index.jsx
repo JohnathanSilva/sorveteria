@@ -1,7 +1,14 @@
 import React from 'react';
 
+import { Header } from '../../components/Header';
+import { Footer } from '../../components/Footer';
+
 export function Info(){
     return(
-        <h1>Info</h1>
+        <div>
+            <Header />
+
+            <Footer />
+        </div>
     );
 }

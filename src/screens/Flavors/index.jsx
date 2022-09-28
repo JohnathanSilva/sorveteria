@@ -1,7 +1,14 @@
 import React from 'react';
 
+import { Header } from '../../components/Header';
+import { Footer } from '../../components/Footer';
+
 export function Flavors(){
     return(
-        <h1>Sabores</h1>
+        <div>
+            <Header />
+            
+            <Footer />
+        </div>
     );
 }
