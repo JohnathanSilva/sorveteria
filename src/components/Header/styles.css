@@ -1,0 +1,34 @@
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    padding: 10px 20px;
+    z-index: 1;
+    background-color: rgb(249, 219, 121);
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}

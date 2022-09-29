@@ -1,0 +1,120 @@
+.container-home{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.section-banner {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/public/assets/banner-home.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(249, 219, 121);
+    margin-top: 60px;
+}
+
+.text-banner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.text-banner h1{
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 3px 5px 1px #474747;
+}
+
+.section-flavors,
+.section-events,
+.section-info {
+    display: flex;
+    width: 100%;
+}
+
+.section-flavors img,
+.section-events img,
+.section-info img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-flavors,
+.text-events,
+.text-info {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 40px;
+}
+
+.text-flavors h2,
+.text-events h2,
+.text-info h2 {
+    line-height: 26px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.text-flavors span,
+.text-events span,
+.text-info span {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.text-flavors p,
+.text-events p,
+.text-info p {
+   line-height: 26px;
+   padding: 0 100px;
+   margin: 40px 0;
+}
+
+@media screen and (max-width: 768px){
+    .text-banner h1{
+        font-size: 50px;
+    }
+    .section-flavors,
+    .section-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-events{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .section-flavors img,
+    .section-events img,
+    .section-info img{
+        width: 100%;
+    }
+    .text-flavors,
+    .text-events,
+    .text-info {
+        width: 100%;
+        text-align: center;
+        padding: 100px 10px;
+    }
+
+    @media screen and (max-width: 436px){
+        .text-banner h1 {
+            font-size: 40px;
+        }
+    }
+}

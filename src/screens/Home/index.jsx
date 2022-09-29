@@ -1,21 +1,24 @@
 import React from 'react';
+
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
+
+import './styles.css';
 
 export function Home(){
     return(
         <div>
             <Header />
-            <main>
-                <section>
-                    <div>
+            <main className='container-home'>
+                <section className='section-banner'>
+                    <div className='text-banner'>
                         <h1>SORVETE ARTESANAL</h1>
                     </div>
                 </section>
-                <section>
-                    <div>
-                        <img src="./assets/banner-sabores.jpg" alt="sorvetes" />
-                        <h1>NOSSOS SABORES</h1>
+                <section className='section-flavors'>
+                    <img src="./assets/banner-sabores.jpg" alt="sorvetes" />
+                    <div className='text-flavors'>
+                        <h2>NOSSOS SABORES</h2>
                         <span>Novos e deliciosos!</span>
                         <p>
                             Sorvete bom é aquele feito com os melhores ingredientes! Aqui na
@@ -26,22 +29,22 @@ export function Home(){
                         </p>
                     </div>
                 </section>
-                <section>
-                    <div>
-                        <h1>NOSSOS EVENTOS</h1>
+                <section className='section-events'>
+                    <div className='text-events'>
+                        <h2>NOSSOS EVENTOS</h2>
                         <span>Delicias com sorvete!</span>
                         <p>
                             Mais do que uma sorveteria, uma extensão da sua casa! Estamos aqui
                             prontinhos para te atender e oferecer os melhores eventos com os melhores
                             sorvete da sua vida! Venha nos conhecer e passar um tempo aqui com a gente. 
                         </p>
-                        <img src="./assets/eventos-image.jpg" alt="mesa de festa" />
                     </div>
+                    <img src="./assets/eventos-image.jpg" alt="mesa de festa" />
                 </section>
-                <section>
-                    <div>
-                        <img src="./assets/sobre-image.jpg" alt="pessoas comendo sorvete" />
-                        <h1>SOBRE NÓS</h1>
+                <section className='section-info'>
+                    <img src="./assets/sobre-image.jpg" alt="pessoas comendo sorvete" />
+                    <div className='text-info'>
+                        <h2>SOBRE NÓS</h2>
                         <span>Alegria em cada casquinha!</span>
                         <p>
                             Venha tomar o melhor sorvete da região aqui com a gente! Nós
